@@ -43,4 +43,12 @@ func TestParseFeed(t *testing.T) {
 	}
 }
 
+func TestPubdate(t *testing.T) {
+	got := parseFeed(getRSS()).Updated
+	want := "Thu, 12 Jan 2023 19:07:01 -0500"
+	if want != got {
+		t.Errorf("got %v, want %v", got, want)
+	}
+}
+
 
