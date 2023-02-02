@@ -1,4 +1,4 @@
-module ezrss
+module github.com/keeb/eztv-rss-to-json
 
 go 1.19
 
